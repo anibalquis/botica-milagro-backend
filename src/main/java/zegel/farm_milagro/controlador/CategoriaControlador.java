@@ -11,9 +11,9 @@ import java.util.List;
 import static org.slf4j.LoggerFactory.getLogger;
 
 @RestController
-// http://localhost:8080/api/v1/
+// http://localhost:8080/api/v1/categorias
 @RequestMapping("api/v1/categorias")
-@CrossOrigin(value = "http://localhost:4200")
+@CrossOrigin(value = "http://localhost:5173")
 
 public class CategoriaControlador {
     private static final Logger logger = getLogger(CategoriaControlador.class);

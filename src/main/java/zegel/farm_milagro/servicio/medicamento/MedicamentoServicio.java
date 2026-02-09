@@ -48,13 +48,15 @@ public class MedicamentoServicio implements IMedicamentoServicio {
         }
 
         // Actualizamos los campos del medicamento
-        medicamentoExistente.setNombreComercial(medicamento.getNombreComercial());
-        medicamentoExistente.setNombreGenerico(medicamento.getNombreGenerico());
-        medicamentoExistente.setLaboratorio(medicamento.getLaboratorio());
+        medicamentoExistente.setNombre(medicamento.getNombre());
         medicamentoExistente.setPrecioUnitario(medicamento.getPrecioUnitario());
         medicamentoExistente.setStockActual(medicamento.getStockActual());
         medicamentoExistente.setUrlImg(medicamento.getUrlImg());
-        medicamentoExistente.setModoUso(medicamento.getModoUso());
+        medicamentoExistente.setTipoEnvase(medicamento.getTipoEnvase());
+        medicamentoExistente.setPrecauciones(medicamento.getPrecauciones());
+        medicamentoExistente.setComposicion(medicamento.getComposicion());
+        medicamentoExistente.setRecomendaciones(medicamento.getRecomendaciones());
+        medicamentoExistente.setVolumen(medicamento.getVolumen());
         medicamentoExistente.setCategoria(medicamento.getCategoria());
 
         return this.medicamentoRepositorio.save(medicamentoExistente);

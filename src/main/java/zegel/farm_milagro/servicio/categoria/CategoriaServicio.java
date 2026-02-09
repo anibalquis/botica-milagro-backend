@@ -49,7 +49,6 @@ public class CategoriaServicio implements ICategoriaServicio {
         }
 
         categoriaExistente.setNombreCategoria(categoria.getNombreCategoria());
-        categoriaExistente.setDescripcion(categoria.getDescripcion());
         return this.categoriaRepositorio.save(categoriaExistente);
     }
 

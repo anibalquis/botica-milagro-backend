@@ -18,7 +18,6 @@ public class Categoria {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer idCategoria;
     String  nombreCategoria;
-    String descripcion;
 
     @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonManagedReference
