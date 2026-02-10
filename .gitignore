@@ -20,7 +20,7 @@ buildNumber.properties
 # ======================
 # ⚠️ Archivos de configuración sensibles (si contienen claves)
 # ======================
-application.properties
+# application.properties
 application.yml
 
 # ======================
