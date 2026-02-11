@@ -14,7 +14,10 @@ import static org.slf4j.LoggerFactory.getLogger;
 
 @RestController
 @RequestMapping("api/v1/clientes")
-@CrossOrigin(value = "http://localhost:4200")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://botica-milagros.vercel.app"
+})
 
 public class ClienteControlador {
     private static final Logger logger = getLogger(ClienteControlador.class);
